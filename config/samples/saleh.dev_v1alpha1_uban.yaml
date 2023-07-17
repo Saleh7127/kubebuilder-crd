@@ -1,0 +1,12 @@
+apiVersion: saleh.dev.saleh.dev/v1alpha1
+kind: Uban
+metadata:
+  labels:
+    app.kubernetes.io/name: uban
+    app.kubernetes.io/instance: uban-sample
+    app.kubernetes.io/part-of: kubebuilder-crd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kubebuilder-crd
+  name: uban-sample
+spec:
+  # TODO(user): Add fields here

@@ -1,0 +1,32 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - saleh.dev.saleh.dev
+  resources:
+  - ubans
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - saleh.dev.saleh.dev
+  resources:
+  - ubans/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - saleh.dev.saleh.dev
+  resources:
+  - ubans/status
+  verbs:
+  - get
+  - patch
+  - update

@@ -1,0 +1,10 @@
+apiVersion: saleh.dev.saleh.dev/v1alpha1
+kind: Uban
+metadata:
+  name: aliban1
+spec:
+  deploymentName: aliban1-deploy
+  replicas: 3
+  container:
+    image: saleh7127/go-api-server
+    port: 7127
